@@ -10,6 +10,30 @@ namespace Csharp_Intermediate_Udemy
     {
         static void Main(string[] args)
         {
+            Stopwatch sw = new Stopwatch();
+
+            while (true)
+            {
+                try
+                {
+                    Console.WriteLine("Enter stop or start command");
+                    String command = Console.ReadLine();
+                    if (command.Equals("stop"))
+                    {
+                        sw.stop();
+                    }
+                    if (command.Equals("start"))
+                    {
+                        sw.start();
+                    }
+                }
+                catch (Exception e)
+                {
+
+                    Console.WriteLine(e.Message);
+                }
+                
+            }
         }
     }
 }
