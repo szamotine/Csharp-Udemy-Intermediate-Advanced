@@ -8,10 +8,10 @@ namespace Csharp_Intermediate_Udemy
 {
     class Stopwatch
     {
-        TimeSpan duration;
-        bool stopwatchStarted;
-        DateTime begin;
-        DateTime end;
+        private TimeSpan duration;
+        private bool stopwatchStarted;
+        private DateTime begin;
+        
 
         public Stopwatch()
         {

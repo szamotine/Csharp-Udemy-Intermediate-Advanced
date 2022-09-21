@@ -10,6 +10,29 @@ namespace Csharp_Intermediate_Udemy
     {
         static void Main(string[] args)
         {
+
+            #region Post
+            Post p = new Post();
+
+            while (true)
+            {
+                Console.WriteLine("Would you like to upvote or downvote? Enter up or down.");
+                string command = Console.ReadLine();
+                if (command.Equals("up"))
+                {
+                    p.upVote();
+                    
+                }
+                if (command.Equals("down"))
+                {
+                    p.downVote();
+                }
+
+            }
+
+            #endregion
+
+            #region Stopwatch
             Stopwatch sw = new Stopwatch();
 
             while (true)
@@ -34,6 +57,7 @@ namespace Csharp_Intermediate_Udemy
                 }
                 
             }
+            #endregion  
         }
     }
 }
