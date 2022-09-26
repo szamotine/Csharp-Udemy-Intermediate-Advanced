@@ -11,30 +11,31 @@ namespace Csharp_Intermediate_Udemy
         private string title;
         private string description;
         private DateTime creationDateTime;
-        private int voteCount;
+        
+        public int VoteCount { get; set; }
 
         public Post()
         {
-            voteCount = 0;
+            VoteCount = 0;
             creationDateTime = DateTime.Now;
         }
         public Post(string title, string description)
         {
             this.title = title;
             this.description = description;
-            voteCount = 0;
+            VoteCount = 0;
             creationDateTime = DateTime.Now;
         }
 
         public void upVote()
         {
            // voteCount++;
-            Console.WriteLine("Vote count is now {0}", ++voteCount);
+            Console.WriteLine("Vote count is now {0}", ++VoteCount);
         }
         public void downVote()
         {
            // voteCount--;
-            Console.WriteLine("Vote count is now {0}", --voteCount);
+            Console.WriteLine("Vote count is now {0}", --VoteCount);
         }
 
     }

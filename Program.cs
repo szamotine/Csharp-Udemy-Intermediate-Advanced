@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Csharp_Intermediate_Udemy
+﻿namespace Csharp_Intermediate_Udemy
 {
     class Program
     {
@@ -12,7 +6,8 @@ namespace Csharp_Intermediate_Udemy
         {
 
             #region Post
-            Post p = new Post();
+            /*
+            var p = new Post();
 
             while (true)
             {
@@ -29,11 +24,12 @@ namespace Csharp_Intermediate_Udemy
                 }
 
             }
-
+            */
             #endregion
 
             #region Stopwatch
-            Stopwatch sw = new Stopwatch();
+            /*
+             var sw = new Stopwatch();
 
             while (true)
             {
@@ -57,7 +53,8 @@ namespace Csharp_Intermediate_Udemy
                 }
                 
             }
-            #endregion  
+            */
+            #endregion
         }
     }
 }
