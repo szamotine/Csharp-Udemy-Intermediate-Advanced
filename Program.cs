@@ -1,10 +1,11 @@
-﻿namespace Csharp_Intermediate_Udemy
+﻿using System;
+
+namespace Csharp_Intermediate_Udemy
 {
     class Program
     {
         static void Main(string[] args)
         {
-
             #region Post
             /*
             var p = new Post();
@@ -55,6 +56,23 @@
             }
             */
             #endregion
+
+            #region Stack
+
+            var stack = new Stack();
+            stack.Push(1);
+           // stack.display();
+            stack.Push(2);
+            stack.Push(3);
+            
+            Console.WriteLine(stack.Pop());
+            Console.WriteLine(stack.Pop());
+            Console.WriteLine(stack.Pop());
+
+
+            #endregion
+
+
         }
     }
 }
