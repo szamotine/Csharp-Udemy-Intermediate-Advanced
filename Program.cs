@@ -58,7 +58,7 @@ namespace Csharp_Intermediate_Udemy
             #endregion
 
             #region Stack
-
+            /*
             var stack = new Stack();
             stack.Push(1);
            // stack.display();
@@ -68,9 +68,10 @@ namespace Csharp_Intermediate_Udemy
             Console.WriteLine(stack.Pop());
             Console.WriteLine(stack.Pop());
             Console.WriteLine(stack.Pop());
-
-
+            */
             #endregion
+
+
 
 
         }
