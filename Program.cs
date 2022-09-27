@@ -1,4 +1,5 @@
 ﻿using Csharp_Intermediate_Udemy.Delegates;
+using Csharp_Intermediate_Udemy.EventsAndDelegates;
 using System;
 
 namespace Csharp_Intermediate_Udemy
@@ -108,8 +109,19 @@ namespace Csharp_Intermediate_Udemy
 
             #endregion
 
+            #region Events and Delegates
 
+            var video = new Video2() { Title = "Video 1" };
+            var videoencoder = new VideoEncoder2();     //publisher
+            var mailService = new MailService();        //subscriber
+            var smsService = new SmsService();          //subscriber
 
+            videoencoder.VideoEncoded += mailService.OnVideoEncoded;
+            videoencoder.VideoEncoded += smsService.OnVideoEncoded;
+
+            videoencoder.Encode(video);
+
+            #endregion
 
         }
     }
