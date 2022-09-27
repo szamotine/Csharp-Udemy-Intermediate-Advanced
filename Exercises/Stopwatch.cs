@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Csharp_Intermediate_Udemy
 {
@@ -11,7 +7,7 @@ namespace Csharp_Intermediate_Udemy
         private TimeSpan duration;
         private bool stopwatchStarted;
         private DateTime begin;
-        
+
 
         public Stopwatch()
         {
@@ -36,7 +32,7 @@ namespace Csharp_Intermediate_Udemy
                 throw new InvalidOperationException("Cannot stop watch twice");
             }
             Console.WriteLine("Stopping stopwatch");
-            duration =  DateTime.Now - begin;
+            duration = DateTime.Now - begin;
             stopwatchStarted = false;
             Console.WriteLine("Duration is {0}", duration);
 

@@ -1,4 +1,5 @@
-﻿using Csharp_Intermediate_Udemy.WorkflowEngineProject;
+﻿using Csharp_Intermediate_Udemy.Delegates;
+using System;
 
 namespace Csharp_Intermediate_Udemy
 {
@@ -81,15 +82,33 @@ namespace Csharp_Intermediate_Udemy
             #endregion
 
             #region Workflow
-
+            /*
             var workflow = new Workflow();
             var workflow2 = new Workflow();
             var engine = new WorkflowEngine();
 
             engine.Run(workflow);
             engine.Run(workflow2);
+            */
+            #endregion
+
+            #region PhotoProcessor
+            /*
+            var processor = new PhotoProcessor();
+            var filters = new PhotoFilters();
+
+            //PhotoProcessor. filterHandler = filters.ApplyBrightness; -> uses custom delegate, replaced by generic
+
+            Action<Photo> filterHandler = filters.ApplyBrightness;
+            filterHandler += filters.ApplyContrast;
+            filterHandler += filters.Resize;
+
+            processor.Process("path", filterHandler);
+            */
 
             #endregion
+
+
 
 
         }
