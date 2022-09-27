@@ -6,7 +6,7 @@ namespace Csharp_Intermediate_Udemy
     {
         public void Send(Message message)
         {
-            Console.WriteLine("Sending sms..."); 
+            Console.WriteLine("Sending sms...");
         }
     }
 }

@@ -9,7 +9,7 @@ namespace Csharp_Intermediate_Udemy
 
         public VideoEncoder()
         {
-           _notificationChannels = new List<INotificationChannel>();
+            _notificationChannels = new List<INotificationChannel>();
         }
 
         public void Encode(Video Video)

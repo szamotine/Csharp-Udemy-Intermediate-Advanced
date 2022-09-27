@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Csharp_Intermediate_Udemy
 {
@@ -11,7 +7,7 @@ namespace Csharp_Intermediate_Udemy
         private string title;
         private string description;
         private DateTime creationDateTime;
-        
+
         public int VoteCount { get; set; }
 
         public Post()
@@ -29,12 +25,12 @@ namespace Csharp_Intermediate_Udemy
 
         public void upVote()
         {
-           // voteCount++;
+            // voteCount++;
             Console.WriteLine("Vote count is now {0}", ++VoteCount);
         }
         public void downVote()
         {
-           // voteCount--;
+            // voteCount--;
             Console.WriteLine("Vote count is now {0}", --VoteCount);
         }
 
