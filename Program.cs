@@ -1,4 +1,4 @@
-﻿using System;
+﻿using Csharp_Intermediate_Udemy.WorkflowEngineProject;
 
 namespace Csharp_Intermediate_Udemy
 {
@@ -71,9 +71,28 @@ namespace Csharp_Intermediate_Udemy
             */
             #endregion
 
+            #region Video Encoder
+            /*
+            var encoder = new VideoEncoder();
+            encoder.RegisterNotificationChannel(new MailNotificationChannel());
+            encoder.RegisterNotificationChannel(new SmsNotificationChannel());
+            encoder.Encode(new Video());
+            */
+            #endregion
 
+            #region Workflow
+
+            var workflow = new Workflow();
+            var workflow2 = new Workflow();
+            var engine = new WorkflowEngine();
+
+            engine.Run(workflow);
+            engine.Run(workflow2);
+
+            #endregion
 
 
         }
     }
+
 }
