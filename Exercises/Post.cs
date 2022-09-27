@@ -4,23 +4,25 @@ namespace Csharp_Intermediate_Udemy
 {
     class Post
     {
-        private string title;
-        private string description;
-        private DateTime creationDateTime;
+        public string Title { get; set; }
+
+        public string Description { get; set; }
+
+        public DateTime CreationDateTime { get; set; }
 
         public int VoteCount { get; set; }
 
         public Post()
         {
             VoteCount = 0;
-            creationDateTime = DateTime.Now;
+            CreationDateTime = DateTime.Now;
         }
         public Post(string title, string description)
         {
-            this.title = title;
-            this.description = description;
+            this.Title = title;
+            this.Description = description;
             VoteCount = 0;
-            creationDateTime = DateTime.Now;
+            CreationDateTime = DateTime.Now;
         }
 
         public void upVote()

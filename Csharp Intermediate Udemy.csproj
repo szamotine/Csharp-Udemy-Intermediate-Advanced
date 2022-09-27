@@ -46,6 +46,7 @@
     <Compile Include="Delegates\Photo.cs" />
     <Compile Include="Delegates\PhotoFilters.cs" />
     <Compile Include="Delegates\PhotoProcessor.cs" />
+    <Compile Include="EventsAndDelegates\Video2.cs" />
     <Compile Include="VideoEncoder\INotificationChannel.cs" />
     <Compile Include="VideoEncoder\MailNotificationChannel.cs" />
     <Compile Include="VideoEncoder\Message.cs" />
