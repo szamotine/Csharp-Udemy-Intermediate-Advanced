@@ -1,6 +1,7 @@
 ﻿using Csharp_Intermediate_Udemy.Delegates;
 using Csharp_Intermediate_Udemy.EventsAndDelegates;
-using System;
+using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Csharp_Intermediate_Udemy
 {
@@ -110,7 +111,7 @@ namespace Csharp_Intermediate_Udemy
             #endregion
 
             #region Events and Delegates
-
+            /*
             var video = new Video2() { Title = "Video 1" };
             var videoencoder = new VideoEncoder2();     //publisher
             var mailService = new MailService();        //subscriber
@@ -120,10 +121,15 @@ namespace Csharp_Intermediate_Udemy
             videoencoder.VideoEncoded += smsService.OnVideoEncoded;
 
             videoencoder.Encode(video);
-
+            */
             #endregion
 
+            #region Extension Methods
+            /*
+            var str = "this is a really long string that goes on and on and never really ends...";
+            Console.WriteLine(str.Shorten(-1));
+            */
+            #endregion
         }
     }
-
 }

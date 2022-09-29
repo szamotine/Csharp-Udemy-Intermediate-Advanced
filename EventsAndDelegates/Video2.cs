@@ -27,7 +27,7 @@ namespace Csharp_Intermediate_Udemy.EventsAndDelegates
         //2 - define an event based on that delegate
         //public event VideoEncodedHandler VideoEncoded;
 
-        // replaces step 2 and 3
+        // this replaces step 1 and 2 using a generic handler instead of a custom handler
         public event EventHandler<VideoEventArgs> VideoEncoded;
         
 
