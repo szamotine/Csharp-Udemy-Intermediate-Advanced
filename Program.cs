@@ -137,7 +137,7 @@ namespace Csharp_Intermediate_Udemy
 
             #region LINQ
 
-            var books = new BookRepository().GetBooks();
+            //var books = new BookRepository().GetBooks();
 
             ////without LINQ
             //var cheapBooks = new List<Book>();
@@ -167,6 +167,33 @@ namespace Csharp_Intermediate_Udemy
             foreach (var b in cheapBooks) Console.WriteLine("Title: {0}, \t Price: {1}", b.Title, b.Price);
             */
             #endregion
+
+            #region Nullable Types
+            /*
+            DateTime? date = null;
+            DateTime date2;
+
+            //longer method
+            if(date != null)
+            {
+                date2 = date.GetValueOrDefault();
+            }
+            else
+            {
+                date2 = DateTime.Today;
+            }
+
+            //Null Coalescing Operator
+
+            DateTime date3 = date ?? DateTime.Today;
+
+
+
+            Console.WriteLine(date2);
+            */
+            #endregion
+
+
 
         }
     }
