@@ -47,6 +47,9 @@
     <Compile Include="Delegates\PhotoFilters.cs" />
     <Compile Include="Delegates\PhotoProcessor.cs" />
     <Compile Include="EventsAndDelegates\Video2.cs" />
+    <Compile Include="Exception Handling\Calculator.cs" />
+    <Compile Include="Exception Handling\YoutubeAPI.cs" />
+    <Compile Include="Exception Handling\YoutubeException.cs" />
     <Compile Include="Exercises\StringExtensions.cs" />
     <Compile Include="LINQ\Book.cs" />
     <Compile Include="VideoEncoder\INotificationChannel.cs" />
