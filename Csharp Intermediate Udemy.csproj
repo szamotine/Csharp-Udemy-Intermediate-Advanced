@@ -48,6 +48,7 @@
     <Compile Include="Delegates\PhotoProcessor.cs" />
     <Compile Include="EventsAndDelegates\Video2.cs" />
     <Compile Include="Exercises\StringExtensions.cs" />
+    <Compile Include="LINQ\Book.cs" />
     <Compile Include="VideoEncoder\INotificationChannel.cs" />
     <Compile Include="VideoEncoder\MailNotificationChannel.cs" />
     <Compile Include="VideoEncoder\Message.cs" />
