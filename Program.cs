@@ -1,5 +1,7 @@
-﻿using Csharp_Intermediate_Udemy.Delegates;
+﻿using Csharp_Intermediate_Udemy;
+using Csharp_Intermediate_Udemy.Delegates;
 using Csharp_Intermediate_Udemy.EventsAndDelegates;
+using ExceptionHandling;
 using LINQ;
 using System;
 using System.Collections.Concurrent;
@@ -193,8 +195,28 @@ namespace Csharp_Intermediate_Udemy
             */
             #endregion
 
+            #region Exception Handling
 
+            //var calculator = new Calculator();
+            //var result = calculator.Divide(5, 0);
+
+            /*
+            try
+            {
+                var api = new YoutubeAPI();
+                var videos = api.GetVideos("userName");
+            }
+            catch (Exception ex)
+            {
+
+                Console.WriteLine(ex.Message);
+            }
+            */
+
+            #endregion
 
         }
     }
 }
+
+
