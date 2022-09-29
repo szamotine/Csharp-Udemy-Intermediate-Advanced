@@ -1,6 +1,10 @@
 ﻿using Csharp_Intermediate_Udemy.Delegates;
 using Csharp_Intermediate_Udemy.EventsAndDelegates;
+using LINQ;
+using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
+using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 
 namespace Csharp_Intermediate_Udemy
@@ -130,6 +134,40 @@ namespace Csharp_Intermediate_Udemy
             Console.WriteLine(str.Shorten(-1));
             */
             #endregion
+
+            #region LINQ
+
+            var books = new BookRepository().GetBooks();
+
+            ////without LINQ
+            //var cheapBooks = new List<Book>();
+            //foreach(var b in books)
+            //{
+            //    if (b.Price < 10) cheapBooks.Add(b);
+            //}
+
+
+            //LINQ Extension Method
+
+            //var cheapBooks = books
+            //                    .Where(b => b.Price < 10)
+            //                    .OrderByDescending(b => b.Price)
+            //                    .Select(b => b.Title);
+
+
+
+            /*
+            //LINQ Query Operators
+            var cheapBooks = from b in books
+                             where b.Price < 10
+                             orderby b.Title
+                             select b;
+
+            Console.WriteLine("Cheap books:");
+            foreach (var b in cheapBooks) Console.WriteLine("Title: {0}, \t Price: {1}", b.Title, b.Price);
+            */
+            #endregion
+
         }
     }
 }
