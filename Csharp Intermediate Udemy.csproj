@@ -51,6 +51,7 @@
     <Compile Include="Exception Handling\YoutubeAPI.cs" />
     <Compile Include="Exception Handling\YoutubeException.cs" />
     <Compile Include="Exercises\StringExtensions.cs" />
+    <Compile Include="Async\HTMLDownloader.cs" />
     <Compile Include="LINQ\Book.cs" />
     <Compile Include="VideoEncoder\INotificationChannel.cs" />
     <Compile Include="VideoEncoder\MailNotificationChannel.cs" />

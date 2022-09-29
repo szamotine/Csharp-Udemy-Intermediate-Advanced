@@ -1,4 +1,5 @@
-﻿using Csharp_Intermediate_Udemy;
+﻿using asynchronous;
+using Csharp_Intermediate_Udemy;
 using Csharp_Intermediate_Udemy.Delegates;
 using Csharp_Intermediate_Udemy.EventsAndDelegates;
 using ExceptionHandling;
@@ -8,6 +9,7 @@ using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
+using System.Threading.Tasks;
 
 namespace Csharp_Intermediate_Udemy
 {
@@ -215,8 +217,22 @@ namespace Csharp_Intermediate_Udemy
 
             #endregion
 
+            #region Async
+            /*
+            var htmlD = new HTMLDownloader();
+            var url = "http://msdn.microsoft.com";
+            htmlD.DownloadHtml(url);
+            htmlD.DownloadHtmlAsync(url).Wait();
+            //htmlD.DownloadHtml(url);
+            Console.WriteLine(htmlD.GetHtml(url).Substring(0, 30));
+            Console.WriteLine(htmlD.GetHtmlAsync(url).ToString().Substring(0, 30));
+
+
+            //await htmlD.DownloadHtmlAsync(url);
+            */
+            #endregion
+
         }
     }
 }
-
 
